@@ -1,0 +1,16 @@
+@media (min-width: 1200px) {
+  body {
+    background: #f3f4f5;
+  }
+}
+
+.btn {
+  border-radius: 10px;
+}
+
+.navbar {
+  background: rgba(241,242,244,0.8);
+  border-bottom-width: 1px;
+  border-bottom-color: #dfe3e7;
+}
+
