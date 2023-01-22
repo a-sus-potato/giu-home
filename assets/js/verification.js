@@ -6,6 +6,11 @@ function submitRun() {
     let link = document.getElementById('link').value;
     let chamber = document.getElementById('chamber').value;
     let version = document.getElementById('version').value;
+    let team = document.getElementById('team');
+
+    let selected = [...team.options]
+        .filter(option => option.selected)
+        .map(option => option.value);
 
     let params = {
         name: name,
@@ -13,7 +18,8 @@ function submitRun() {
         time: time,
         link: link,
         abyssVersion: version,
-        chamber: chamber
+        chamber: chamber,
+        team: selected
     }
 
     fetch('https://cuddly-southern-bell.glitch.me/api/submit', {
@@ -31,24 +37,3 @@ function submitRun() {
 
         console.log(params);
 }
-
-// Post
-// fetch('https://cuddly-southern-bell.glitch.me/api/submit', {
-//     method: 'POST',
-//     headers: {
-//         'Content-Type': 'application/json'
-//     },
-//     body: JSON.stringify({
-//         name: "Lilac",
-//         uid: 600044174,
-//         time: 15,
-//         link: "https://streamable.com/9os7z2",
-//         abyssVersion: 3.3,
-//         chamber: "12-2-2"
-//     })
-// })
-//     .then(res => {
-//         return res.json()
-//     })
-//     .then(data => console.log(data))
-//     .catch(error => console.log('ERROR'))
