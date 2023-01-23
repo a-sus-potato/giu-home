@@ -80,8 +80,9 @@ function changeChamber(event) {
 
             let tableRef = document.getElementsByTagName('tbody')[0];
 
+
             for (let i = 0; i < InitialData.length; i++) {
-                let newRow = tableRef.insertRow();
+                let newRow = new_tbody.insertRow();
                 for (let j = 0; j < 5; j++) {
                     let newCell = newRow.insertCell(-1);
 
@@ -89,25 +90,13 @@ function changeChamber(event) {
                         newCell.innerHTML = `${i + 1}`
                     }
                     else if (j === 1) {
-                        newCell.innerHTML = `${InitialData[i].time}s`
+                        newCell.innerHTML = `${InitialData[i].time}`
                     }
                     else if (j === 2) {
                         newCell.innerHTML = `${InitialData[i].name}`
                     }
                     else if (j === 3) {
                         newCell.innerHTML = `${InitialData[i].link}`
-                    }
-                    else if (j === 4) {
-                        let teams = document.getElementsByTagName('td');
-                        for (let k = 0; k < InitialData[i].team.length; k++) {
-
-                            let icons = document.createElement('img');
-                            icons.src = `assets/img/character-icon2/${InitialData[i].team[k]}.png`;
-                            icons.width = '50';
-                            icons.height = '50';
-                            teams[teams.length - 1].append(icons);
-                        }
-
                     }
 
                 }
