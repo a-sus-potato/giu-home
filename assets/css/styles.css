@@ -15,8 +15,10 @@
 }
 
 td {
-  text-align: center;
+  text-align: left;
+  vertical-align: middle;
 }
+
 
 .bi-link-45deg {
   font-size: 2em;
