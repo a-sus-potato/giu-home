@@ -1,12 +1,13 @@
 let currentChamber = document.getElementsByClassName('active')[0];
+console.log(document.referrer);
 
 let navLinks = document.getElementsByClassName('nav-link');
 for (let i = 0; i < navLinks.length; i++) {
     navLinks[i].addEventListener('click', changeChamber)
 }
 
-// Get Initial Data for 12-1-1
-fetch(`https://cuddly-southern-bell.glitch.me/api/get12-1-1`)
+// Get Initial Data for page Clicked
+fetch(`https://cuddly-southern-bell.glitch.me/api/get${currentChamber.id}`)
     .then(res => {
         if (res.ok) {
             //console.log('success')
