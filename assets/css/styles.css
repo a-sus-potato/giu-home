@@ -9,8 +9,16 @@
 }
 
 .navbar {
-  background: rgba(241,242,244,0.8);
+  background: rgba(241, 242, 244, 0.8);
   border-bottom-width: 1px;
   border-bottom-color: #dfe3e7;
 }
 
+td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.bi-link-45deg {
+  font-size: 2em;
+}
