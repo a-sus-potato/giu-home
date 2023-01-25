@@ -13,26 +13,36 @@
 
 <body style="background: rgb(50,52,53);color: rgb(200,204,208);">
     <nav class="navbar navbar-light navbar-expand-md sticky-top py-3" style="color: rgb(22,23,24);background: #4C80F9;">
-        <div class="container"><a class="navbar-brand d-flex align-items-center" href="#"><span>GIU
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="index.html"><span>GIU
                     Speedrunning</span></a><button data-bs-toggle="collapse" class="navbar-toggler"
                 data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span
                     class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav me-auto">
-                    <li class="nav-item"><a id="12-1-1" class="nav-link active" href="leaderboards.html">12-1-1</a><a
-                            id="12-1-2" class="nav-link" href="leaderboards.html">12-1-2</a></li>
-                    <li class="nav-item"><a id="12-2-1" class="nav-link" href="leaderboards.html">12-2-1</a><a
-                            id="12-2-2" class="nav-link" href="leaderboards.html">12-2-2</a></li>
-                    <li class="nav-item"><a id="12-3-1" class="nav-link" href="leaderboards.html">12-3-1</a><a
-                            id="12-3-2" class="nav-link" href="leaderboards.html">12-3-2</a></li>
+                    <li class="nav-item"><a id="12-1-1" class="nav-link active" href="#">12-1-1</a><a id="12-1-2"
+                            class="nav-link" href="#">12-1-2</a></li>
+                    <li class="nav-item"><a id="12-2-1" class="nav-link" href="#">12-2-1</a><a id="12-2-2"
+                            class="nav-link" href="#">12-2-2</a></li>
+                    <li class="nav-item"><a id="12-3-1" class="nav-link" href="#">12-3-1</a><a id="12-3-2"
+                            class="nav-link" href="#">12-3-2</a></li>
                 </ul><a class="btn btn-dark" role="button" id="submit" href="submit.html">Submit a Run</a>
             </div>
         </div>
     </nav>
-    <video id="bg-video" autoplay loop muted>
-        <source src="assets/video/bg-test2.mp4" type="video/mp4">
-    </video>
-
+    <div class="table-responsive" id="table" style="padding-right: 50px;padding-left: 50px;color: rgb(255,255,255);">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th style="width: 110px;color: rgb(255,255,255);">#</th>
+                    <th style="width: 150px;color: rgb(255,255,255);">Time</th>
+                    <th style="width: 220px;color: rgb(255,255,255);">Name</th>
+                    <th style="width: 200px;color: rgb(255,255,255);">Link</th>
+                    <th style="color: rgb(255,255,255);">Team</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
