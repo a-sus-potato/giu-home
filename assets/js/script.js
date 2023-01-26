@@ -7,7 +7,7 @@ for (let i = 0; i < navLinks.length; i++) {
 }
 
 // Get Initial Data for page Clicked
-fetch(`https://cuddly-southern-bell.glitch.me/api/get${currentChamber.id}`)
+fetch(`https://giu-run-submission.onrender.com/api/get${currentChamber.id}`)
     .then(res => {
         if (res.ok) {
             //console.log('success')
@@ -70,7 +70,7 @@ function changeChamber(event) {
     event.target.classList.add("active");
 
     //Create new table
-    fetch(`https://cuddly-southern-bell.glitch.me/api/get${currentChamber.id}`)
+    fetch(`https://giu-run-submission.onrender.com/api/get${currentChamber.id}`)
         .then(res => {
             if (res.ok) {
                 //console.log('success')
