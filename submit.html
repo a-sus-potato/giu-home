@@ -4,10 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>GIU SPEEDRUN PAGE</title>
+    <title>Submit a Run</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/Navbar-With-Button-icons.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -20,9 +22,92 @@
                         <div class="card-body p-sm-5">
                             <h2 class="text-center mb-4">Submit a Run</h2>
                             <form method="post">
-                                <div class="mb-3"><input class="form-control" type="text" id="name" name="name" placeholder="Name"></div><input class="form-control" type="text" id="time" name="time" placeholder="Time">
-                                <div class="mb-3"></div><input class="form-control" type="text" id="link" name="link" placeholder="Link to Video">
-                                <div class="mb-3"></div>
+                                <div class="mb-3"></div><input class="form-control" type="text" id="name" placeholder="Name">
+                                <div class="mb-3"></div><input class="form-control" type="text" id="id" placeholder="ID on Discord">
+                                <div class="mb-3"></div><input class="form-control" type="text" id="link" placeholder="Link to Video" style="margin-bottom: 15px;">
+                                <form>
+                                    <label>Characters Used:</label>
+                                    <select id="team" class="form-control selectpicker" multiple
+                                        data-live-search="true" >
+                                        <option value="albedo">Albedo</option>
+                                        <option value="alhaitham">Alhaitham</option>
+                                        <option value="aloy">Aloy</option>
+                                        <option value="amber">Amber</option>
+                                        <option value="ayaka">Ayaka</option>
+                                        <option value="ayato">Ayato</option>
+                                        <option value="barbara">Barbara</option>
+                                        <option value="beidou">Beidou</option>
+                                        <option value="bennett">Bennett</option>
+                                        <option value="candace">Candace</option>
+                                        <option value="chongyun">Chongyun</option>
+                                        <option value="collei">Collei</option>
+                                        <option value="cyno">Cyno</option>
+                                        <option value="diluc">Diluc</option>
+                                        <option value="diona">Diona</option>
+                                        <option value="dori">Dori</option>
+                                        <option value="eula">Eula</option>
+                                        <option value="faruzan">Faruzan</option>
+                                        <option value="fischl">Fischl</option>
+                                        <option value="ganyu">Ganyu</option>
+                                        <option value="gorou">Gorou</option>
+                                        <option value="heizou">Heizou</option>
+                                        <option value="hutao">Hu Tao</option>
+                                        <option value="itto">Itto</option>
+                                        <option value="jean">Jean</option>
+                                        <option value="kaeya">Kaeya</option>
+                                        <option value="kazuha">Kazuha</option>
+                                        <option value="keqing">Keqing</option>
+                                        <option value="klee">Klee</option>
+                                        <option value="kokomi">Kokomi</option>
+                                        <option value="kujousara">Kujou Sara</option>
+                                        <option value="kukishinobu">Kuki Shinobu</option>
+                                        <option value="layla">Layla</option>
+                                        <option value="lisa">Lisa</option>
+                                        <option value="mona">Mona</option>
+                                        <option value="nahida">Nahida</option>
+                                        <option value="nilou">Nilou</option>
+                                        <option value="ninguang">Ninguang</option>
+                                        <option value="noelle">Noelle</option>
+                                        <option value="qiqi">Qiqi</option>
+                                        <option value="raiden">Raiden Shogun</option>
+                                        <option value="razor">Razor</option>
+                                        <option value="rosaria">Rosaria</option>
+                                        <option value="sayu">Sayu</option>
+                                        <option value="shenhe">Shenhe</option>
+                                        <option value="sucrose">Sucrose</option>
+                                        <option value="tartaglia">Tartaglia</option>
+                                        <option value="thoma">Thoma</option>
+                                        <option value="tighnari">Tighnari</option>
+                                        <option value="traveler">Traveler</option>
+                                        <option value="venti">Venti</option>
+                                        <option value="wanderer">Wanderer</option>
+                                        <option value="xiangling">Xiangling</option>
+                                        <option value="xiao">Xiao</option>
+                                        <option value="xingqiu">Xingqiu</option>
+                                        <option value="xinyan">Xinyan</option>
+                                        <option value="yaemiko">Yae Miko</option>
+                                        <option value="yanfei">Yanfei</option>
+                                        <option value="yaoyao">Yaoyao</option>
+                                        <option value="yelan">Yelan</option>
+                                        <option value="yoimiya">Yoimiya</option>
+                                        <option value="yunjin">Yunjin</option>
+                                        <option value="zhongli">Zhongli</option>
+                                    </select>
+                                </form>
+                                <div style="margin-top: 15px;">
+                                    <form>
+                                        <label >Chamber:</label>
+                                        <select id="chamber" class="form-control selectpicker">
+                                            <option value="12-1-1">12-1-1</option>
+                                            <option value="12-1-2">12-1-2</option>
+                                            <option value="12-2-1">12-2-1</option>
+                                            <option value="12-2-2">12-2-2</option>
+                                            <option value="12-3-1">12-3-1</option>
+                                            <option value="12-3-2">12-3-2</option>
+                                        </select>
+                                    </form>
+                                </div>
+                                
                                 <div><button class="btn btn-primary d-block w-100" id="send" style="margin-top:40px;" type="button">Send </button></div>
                                 <div></div>
                             </form>
@@ -34,6 +119,8 @@
     </section>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/submit.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
 </body>
 
 </html>
